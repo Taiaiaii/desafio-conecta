@@ -1,12 +1,162 @@
-html {
+body{
     background-color: #E5E5E5;
+    font-family: 'Suez One',
+    serif;
 }
 
 .cabecalho {
-    position: relative;
-    background-image: url(../images/fundo-cabecalho.png) ; 
+    background-image: url(../images/fundo-cabecalho.png);
+    background-repeat: no-repeat;
     width: 100%;
+    height: auto;
 }
 
+.cabecalho__logo {
+    display: block;
+    padding-left: 2.5%;
+}
+
+.cabecalho__redes-sociais {
+    padding: 20px;
+}
+
+.cabecalho__redes-sociais li {
+    display: inline;
+    padding: 9px;
+}
+
+.cabecalho__img {
+    display: block;
+    width: 60%;
+
+}
+
+.cabecalho__texto {
+    width: 80%;
+    color: white;
+    text-align: center;
+    
+    margin-bottom: 20%;
+
+}
+
+.cabecalho__titulo {
+    width: 100%;
+    font-size: 2.5em;
+}
+
+.cabecalho__btn {
+    margin: 20% 0;
+    background-color: #00EC5B;
+    border: none;
+    border-radius: 40px;
+    width: 100%;
+    padding: 20px;
+
+}
+
+/* flex */
+
+.row {
+    display: flex;
+}
+
+.cabecalho__topo {
+    justify-content: space-between;
+    padding-top: 10%;
+}
+
+.cabecalho__principal {
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* responsivo */
+@media screen and (min-width: 768px) {
 
 
+
+    .cabecalho__texto {
+        width: 80%;
+        margin: 0;
+        margin-top: 20%;
+        text-align: left;
+        margin-left: 5%;
+        font-size: 1em;
+
+
+    }
+
+    .cabecalho__btn {
+        margin: 10% 0;
+        width: 50%;
+
+    }
+
+    .cabecalho__img {
+        width: 35%;
+        margin-right: 8%;
+        margin-bottom: 10%;
+    }
+
+    /* flex */
+    .cabecalho__topo {
+        justify-content: space-between;
+        padding-top: 0px;
+
+    }
+
+    .cabecalho__principal {
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: row-reverse;
+
+
+
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .cabecalho__topo {
+        justify-content: space-between;
+        padding-top: 20px;
+
+    }
+
+    .cabecalho__logo {
+        margin-left: 7%;
+        width: 12%;
+    }
+
+    .cabecalho__redes-sociais {
+        margin-right: 2.5%;
+    }
+
+    .cabecalho__principal {
+        justify-content: space-between;
+    }
+
+    .cabecalho__texto {
+        width: 35%;
+        margin-top: 13%;
+        margin-left: 10%;
+        font-size: 1.5em;
+    }
+
+    .cabecalho__btn {
+        margin: 5% 0;
+        width: 40%;
+
+    }
+
+    .cabecalho__img {
+        width: 25%;
+        margin-right: 12%;
+        margin-bottom: 40%;
+    }
+
+}
