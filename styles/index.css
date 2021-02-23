@@ -1,0 +1,43 @@
+html {
+    background-color: #E5E5E5;
+}
+
+.cabecalho {
+    position: relative;
+    background-image: url(../images/fundo-cabecalho.png) ; 
+    width: 100%;
+}
+
+.cabecalho__logo {
+    position: absolute;
+    left: 10%;
+    top: 8%;
+    
+}
+
+.cabecalho__redes-sociais {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    
+}
+
+.cabecalho__redes-sociais li {
+    display: inline;
+}
+
+.cabecalho__img {
+    display: block; 
+    
+    
+ 
+
+}
+
+.cabecalho__texto {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+
