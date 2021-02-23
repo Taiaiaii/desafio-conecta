@@ -3,9 +3,10 @@ html {
 }
 
 .cabecalho {
-    background-image: url(../images/fundo-cabecalho.png) ; 
+    background-image: url(../images/fundo-cabecalho.png);
     background-repeat: no-repeat;
     width: 100%;
+    height: auto;
 }
 
 .cabecalho__logo {
@@ -19,11 +20,11 @@ html {
 
 .cabecalho__redes-sociais li {
     display: inline;
-    padding:9px;
+    padding: 9px;
 }
 
 .cabecalho__img {
-    display: block; 
+    display: block;
     width: 60%;
 
 }
@@ -32,8 +33,9 @@ html {
     color: white;
     font-weight: bold;
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 20%;
+    font-size: 2.5em;
+    margin: 10%;
+
 }
 
 .cabecalho__btn {
@@ -43,8 +45,7 @@ html {
     border-radius: 40px;
     width: 100%;
     height: 20%;
-    
-    
+
 }
 
 /* flex */
@@ -61,12 +62,92 @@ html {
 .cabecalho__principal {
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
+/* responsivo */
+@media screen and (min-width: 768px) {
 
 
 
+    .cabecalho__texto {
+        width: 80%;
+        margin: 0;
+        margin-top: 20%;
+        text-align: left;
+        margin-left: 5%;
+        font-size: 3em;
+
+
+    }
+
+    .cabecalho__btn {
+        margin: 10% 0;
+        height: 15%;
+        width: 50%;
+
+    }
+
+    .cabecalho__img {
+        width: 35%;
+        margin-right: 8%;
+        margin-bottom: 10%;
+    }
+
+    /* flex */
+    .cabecalho__topo {
+        justify-content: space-between;
+        padding-top: 0px;
+
+    }
+
+    .cabecalho__principal {
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: row-reverse;
 
 
 
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .cabecalho__topo {
+        justify-content: space-between;
+        padding-top: 20px;
+
+    }
+
+    .cabecalho__logo {
+        margin-left: 7%;
+        width: 12%;
+    }
+
+    .cabecalho__redes-sociais {
+        margin-right: 2.5%;
+    }
+
+    .cabecalho__texto {
+        width: 80%;
+        margin-top: 13%;
+        margin-left: 10%;
+        font-size: 4em;
+    }
+
+    .cabecalho__btn {
+        margin: 5% 0;
+        height: 10%;
+        width: 25%;
+
+    }
+
+    .cabecalho__img {
+        width: 35%;
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+
+}
