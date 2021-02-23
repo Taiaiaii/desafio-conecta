@@ -1,0 +1,12 @@
+html {
+    background-color: #E5E5E5;
+}
+
+.cabecalho {
+    position: relative;
+    background-image: url(../images/fundo-cabecalho.png) ; 
+    width: 100%;
+}
+
+
+
