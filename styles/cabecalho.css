@@ -7,6 +7,8 @@ body{
 .cabecalho {
     background-image: url(../images/fundo-cabecalho-mobile.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
     width: 100%;
     height: auto;
 }
