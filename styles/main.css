@@ -42,6 +42,7 @@
     height: auto;
     position: relative;
 
+
 }
 
 
@@ -55,6 +56,11 @@
     width: 50%;
 }
 
+.botao-flex {
+    display: flex;
+    justify-content:center;
+}
+
 .produtos button {
     background-color: #00EC5B;
     border: none;
@@ -64,7 +70,8 @@
     font: inherit;
     position: absolute;
     bottom: -25px;
-    right: 50px;
+ 
+    
 
 
 }
@@ -97,7 +104,7 @@
         font: inherit;
         position: absolute;
         bottom: -20px;
-        right: 70px;
+        
     }
 
 }
@@ -123,8 +130,8 @@
     }
 
     .produtos button {
-         padding: 20px;
-        right: 50px;
+        padding: 20px;
+        
     }
 
 }
