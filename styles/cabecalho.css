@@ -5,7 +5,7 @@ body{
 }
 
 .cabecalho {
-    background-image: url(../images/fundo-cabecalho.png);
+    background-image: url(../images/fundo-cabecalho-mobile.png);
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
@@ -82,7 +82,9 @@ body{
 /* responsivo */
 @media screen and (min-width: 768px) {
 
-
+    .cabecalho {
+        background-image: url(../images/fundo-cabecalho-ipad.png);
+    }
 
     .cabecalho__texto {
         width: 80%;
@@ -127,6 +129,10 @@ body{
 }
 
 @media screen and (min-width: 1024px) {
+
+    .cabecalho {
+        background-image: url(../images/fundo-cabecalho-web.png);
+    }
 
     .cabecalho__topo {
         justify-content: space-between;
