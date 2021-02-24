@@ -1,0 +1,66 @@
+.produtos {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.produtos__titulo {
+  
+    width: 50%;
+    margin: auto;
+    
+}
+
+#produtos__anuncio {
+    padding-bottom: 15%;
+    margin-bottom: 0px;
+}
+
+.produtos h1 {
+    font-size:2em;
+    width: 100%;
+    padding: 0.8em;
+}
+
+.produtos p {
+    font-family: 'Roboto Slab',serif;
+    font-size:1.3em;
+    line-height: 1.4em;
+    width: 100%;
+    margin-bottom: 20%;
+    padding-bottom: 30%;
+}
+
+.produtos__item {
+    width: 80%;
+    margin: auto;
+    box-shadow: 1px 0px 25px 0px #dad6d6;
+    border-radius: 20px;
+    margin-bottom: 20%;
+    height: auto;
+    position: relative;
+
+}
+
+.produtos__item-1 {   
+    margin-top: 20%;
+    width: 70%;
+}
+
+.produtos__item-2 {
+    margin-top: 20%;
+    width: 50%;
+}
+
+.produtos button {
+    background-color: #00EC5B;
+    border: none;
+    border-radius: 50px;
+    width: 60%;
+    padding: 35px;
+    font: inherit;
+    position: absolute;
+    bottom: -30px;
+    right: 90px;
+    
+
+}
