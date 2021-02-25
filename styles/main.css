@@ -71,9 +71,7 @@
     bottom: -25px;
 }
 
-/* segunda seção */
-
-
+/* segunda seção -------------------------*/
 
 .demonstrativos-grid {
     width: 80%;
@@ -101,7 +99,7 @@
 
 }
 
-.comentarios {
+.depoimentos {
     top: 50px;
     left: 5px;
     font-size: 0.8em;
@@ -110,6 +108,21 @@
     width: 90%;
     margin: auto;
     text-align: center;
+}
+
+.demonstrativo__bullets a {
+    text-decoration: none;
+    color: rgb(129, 127, 127);
+    padding: 1%;
+    font-size: 2.2em;
+    line-height: 1.5;
+    opacity: 0.6;
+
+}
+
+.demonstrativo__bullets a.active {
+    color: white;
+    opacity: 1;
 }
 
 .chamada {
@@ -183,7 +196,7 @@
         width: 100%;
     }
 
-    .comentarios {
+    .depoimentos {
         top: 80px;
         left: 80px;
         width: 60%;
@@ -231,7 +244,7 @@
         width: 70%;
     }
 
-    .comentarios {
+    .depoimentos {
         top: 50px;
         left: 40px;
         font-size: 0.9em;
@@ -253,7 +266,7 @@
     .demonstrativos-grid {
         width: 60%;
     }
-    .comentarios {
+    .depoimentos {
         top: 70px;
         left: 100px;
         font-size: 1em;
@@ -273,7 +286,7 @@
             width: 70%;
         }
     
-    .comentarios {
+    .depoimentos {
         top: 200px;
         left: 250px;
         font-size: 1.5em;
@@ -293,7 +306,7 @@
         width: 70%;
     }
 
-    .comentarios {
+    .depoimentos {
         top: 100px;
         left: 150px;
         font-size: 1.5em;
