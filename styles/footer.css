@@ -1,8 +1,7 @@
 .rodape {
-    height: 90vh;
+    height: auto;
     background-image: url(../images/fundo-footer.png);
 }
-
 
 .rodape__fale-conosco {
     width: 100%;
@@ -30,32 +29,71 @@
     display: inline;
     color: white;
     padding: 2px;
-
-
 }
 
 .icones-img {
-    padding: 2px 4px ;
+    padding: 2px 4px;
 }
 
 .icones-separador {
     font-size: 1.1em;
     margin-top: 3px;
-
 }
 
 .icones-legenda {
     font-size: 0.86em;
     margin-top: 5px;
     text-transform: uppercase;
-    font-family: 'Roboto Slab',serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* -------------------------formulário -------------------------*/
+
+.rodape__formulario {
+    font-family: 'Roboto Slab', serif;
+    color: rgb(129, 127, 127);
+    font-size: 0.9em;
+    text-transform: uppercase;
+    width: 90%;
+    margin: auto;
+    padding: 5%;
+    margin-top: 10%;
+}
+
+.rodape__formulario-input {
+    display: block;
+    margin: 4% 0;
+    padding: 7px;
+    background-color: #1b1f1c;
+    border: solid 0.5px #dad6d6;
+    color: #dad6d6;
+    border-bottom: none;
+    border-left: none;
+    font-size: 1.2em;
+    width: 100%;
+
+}
+
+::-webkit-input-placeholder {
+    color: #dad6d6;
+}
+
+.rodape__formulario-input:focus {
+    background-color: rgb(103 101 101);
+    color: white;
+    border: solid 0.5px #00ec5b;
+    border-bottom: none;
+    border-left: none;
+    outline: none;
 }
 
 
 
+
+
 @media screen and (min-width: 768px) {
-    .rodape__fale-conosco h1 {  
-        font-size: 3em; 
+    .rodape__fale-conosco h1 {
+        font-size: 3em;
         padding-top: 20%;
     }
 
@@ -93,13 +131,13 @@
     .rodape {
         display: flex;
         flex-wrap: nowrap;
-        justify-content:baseline
+        justify-content: baseline
     }
 
     .rodape__fale-conosco {
         width: 180%;
         padding: 10%;
-        padding-top: 30%;
+        padding-top: 20%;
     }
 
 }
