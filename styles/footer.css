@@ -67,7 +67,7 @@
 }
 
 .rodape__formulario-bloco label {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .rodape__formulario-input {
@@ -307,8 +307,50 @@
     }
 
     .rodape__lista-flex {
-        width: 40%;
+        width: 33%;
         padding-top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .rodape__botao-flex button {
+        width: 30%;
+    }
+
+    .rodape__direitos {
+
+        margin-left: 10%;
+    }
+
+
+    .rodape__lista-flex {
+        width: 23%;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    .rodape__botao-flex button {
+        width: 20%;
+        padding: 40px;
+    }
+
+    .rodape__direitos {
+        margin-left: 14%;
+        font-size: 1.2em;
+    }
+
+    .rodape__lista-flex {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+
+    .rodape__direitos {
+        margin-left: 12%;
+
     }
 
 }
