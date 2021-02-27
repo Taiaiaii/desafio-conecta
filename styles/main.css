@@ -138,7 +138,7 @@
 
 .experimentar {
     background-color: #00EC5B;
-    height: 300px;
+    height: 45vh;
     display: block;
     margin-top: 25%;
     position: relative;
@@ -279,7 +279,7 @@
 
     .experimentar {
         z-index: -1;
-        height: 241px;
+        height: 35vh;
         margin-top: 10%;
         display: grid;
         grid-template-columns: 35% 30% 35%;
@@ -415,7 +415,7 @@
 
     /* -------------------------terceira seção web -------------------------*/
     .experimentar {
-        height: 241px;
+        height: 35vh;
     }
 
     .experimentar__img-difusa {
@@ -476,7 +476,7 @@
 
     /* -------------------------terceira seção web telas maiores-------------------------*/
     .experimentar {
-        height: 248px;
+        height: 36vh;
     }
 
     .experimentar__img-difusa {
