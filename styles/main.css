@@ -84,10 +84,20 @@
     font-size: 0.8em;
     font-family: 'Roboto Slab', serif;
     line-height: 1.5em;
-    width: 90%;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
+
+    .depoimento-texto {
+        margin-bottom: 3%;
+    }
+
+    .depoimento-autor {
+        margin-bottom: 10%;
+    }
+
+
 .demonstrativo__bullets a {
     text-decoration: none;
     color: rgb(129, 127, 127);
@@ -181,10 +191,12 @@
     }
     .depoimentos {
         top: 80px;
-        left: 80px;
-        width: 60%;
+        left: 5px;
+        width: 90%;
         margin: auto;
     }
+
+
     .chamada {
         top: 120px;
         left: 50px;

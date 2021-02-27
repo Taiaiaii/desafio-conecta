@@ -353,13 +353,3 @@
     }
 
 }
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1) {
-
-    ::i-block-chrome,
-    .rodape__direitos {
-         text-align: center;
-
-        }
-    }
-}

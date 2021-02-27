@@ -1,0 +1,47 @@
+.demonstrativos-grid {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding-bottom: 5%;
+}
+
+.demonstrativo__imagem {
+    display: block;
+    width: 100%;
+
+}
+
+.demonstrativo__figura {
+    position: relative;
+    width: 100%;
+}
+
+.demonstrativo__titulo {
+    position: absolute;
+    color: white;
+}
+
+.depoimentos {
+    top: 50px;
+    left: 5px;
+    font-size: 0.8em;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5em;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.demonstrativo__bullets a {
+    text-decoration: none;
+    color: rgb(129, 127, 127);
+    padding: 1%;
+    font-size: 2.2em;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+
+.demonstrativo__bullets a.active {
+    color: white;
+    opacity: 1;
+}

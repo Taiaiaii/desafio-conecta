@@ -1,56 +1,55 @@
-// const depoimentos = [
-//     {
+const depoimentos = [
 
-//         imagem: "section2-direita-topo.png",
-//         texto: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, incidunt facilis!",
-//         autor: "@taiaiaii"
+    {
+        texto: '"Laborum aliquid , veritatis soluta possimus esse?"',
+        autor: "@zédascouves"
 
-//     },
+    },
 
-//     {
-//         imagem: "section2-direita-topo.png",
-//         texto: "Laborum aliquid doloremque eum ut repellendus corporis repellat, veritatis soluta possimus esse?",
-//         autor: "@zédascouves"
+    {
+        texto: '"Dolor sit amet consectetur adipisicing elit. Nostrum quis et a quidem!!"',
+        autor: "@fulano"
 
-//     },
+    },
 
-//     {
-//         imagem: "section2-direita-topo.png",
-//         texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere quis et a quidem!!",
-//         autor: "@fulano"
+    {
+        texto: '"Excepturi et facilis, recusandae beatae laboriosam autem velit!"',
+        autor: "@cicrano"
 
-//     },
+    },
 
-//     {
-//         imagem: "section2-direita-topo.png",
-//         texto: "Excepturi praesentium magnam et facilis, libero a delectus recusandae beatae laboriosam autem velit!",
-//         autor: "@cicrano"
+    {
 
-//     },
+        texto: '"Lorem ipsum dolor sit amet, elit. Optio, incidunt facilis!"',
+        autor: "@taiaiaii"
 
-// ];
+    },
 
-// let limite = depoimentos.length - 1;
-// let posicao = limite;
+];
 
-// function proximoItem() {
-//     if (posicao < limite) {
-//         posicao++;
-//     } else {
-//         posicao = 0;
-//     }
+let limite = depoimentos.length - 1;
+let posicao = limite;
 
-//     return posicao;
-// }
+function proximoItem() {
+    if (posicao < limite) {
+        posicao++;
+    } else {
+        posicao = 0;
+    }
 
-// function trocaDepoimento() {
+    return posicao;
+}
 
-//     let depoimento = depoimentos[proximoItem()];
+function trocaDepoimento() {
 
-//     document.querySelector(".imagem__comentarios").src = "images/" + depoimentos.imagem;
-//     document.querySelector(".depoimento-texto").textContent = depoimentos.texto;
-//     document.querySelector(".depoimento-autor").textContent = depoimentos.autor;
+    let depoimento = depoimentos[proximoItem()];
 
-// }
 
-// setInterval(trocaDepoimento, 2000);
+    document.querySelector(".depoimento-texto").textContent = depoimento.texto;
+    document.querySelector(".depoimento-autor").textContent = depoimento.autor;
+
+    document.querySelector(".active").classList.remove("active");
+    document.querySelector('.demonstrativo__bullets a[data-posicao="' + posicao + '"]').classList.add("active");
+}
+
+setInterval(trocaDepoimento, 3000);
