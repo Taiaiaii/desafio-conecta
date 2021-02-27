@@ -11,6 +11,7 @@ body{
     background-attachment: scroll;
     width: 100%;
     height: auto;
+    padding-bottom: 5%;
 }
 
 .cabecalho__logo {
@@ -32,7 +33,6 @@ body{
     width: 60%;
 
 }
-
 .transforma {
     transform: rotate(-45deg);
 }
@@ -41,7 +41,7 @@ body{
     width: 80%;
     color: white;
     text-align: center;
-     margin-bottom: 5%;
+    margin-bottom: 5%;
 
 }
 
@@ -151,14 +151,15 @@ body{
     }
 
     .cabecalho__principal {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .cabecalho__texto {
         width: 35%;
-        margin-top: 13%;
-        margin-left: 10%;
+        margin-top: 15%;
+        margin-left: 2%;
         font-size: 1.5em;
+        text-align: left;
     }
 
     .cabecalho__btn {
@@ -169,7 +170,7 @@ body{
 
     .cabecalho__img {
         width: 25%;
-        margin-right: 12%;
+        margin-right: 5%;
         
     }
 

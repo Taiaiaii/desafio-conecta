@@ -2,7 +2,7 @@
     height: auto;
     background-image: url(../images/fundo-footer.png);
     padding-bottom: 1%;
-    
+
 }
 
 .rodape__fale-conosco {
@@ -18,7 +18,7 @@
     padding-top: 30%;
 }
 
-.rodape__flex {
+.rodape__icones {
     display: flex;
     justify-content: center;
     width: 55%;
@@ -158,7 +158,7 @@
         padding-top: 20%;
     }
 
-    .rodape__flex {
+    .rodape__icones {
         width: 60%;
         margin-top: 3%;
     }
@@ -238,27 +238,43 @@
         grid-template-columns: 40% 60%;
         grid-template-rows: 90% 10%;
         padding-bottom: 5%;
-        
-
 
     }
 
     .rodape__fale-conosco {
         width: 100%;
         padding-top: 30%;
+
+
     }
 
     .rodape__fale-conosco h1 {
-        font-size: 3.5em;
+        font-size: 2.5em;
         margin-left: 3%;
         width: 100%;
+    }
 
+    .rodape__icones {
+        margin-left: 26%;
+        width: 100%;
+    }
+
+    .icones {
+        
+        width: 13%;
+    }
+
+    .icones-legenda {
+        font-size: 0.8em;
+        width: 100%;
+        padding-top: 1%;
     }
 
     /* -------------------------formulário web -------------------------*/
     .rodape__formulario {
-        width: 100%;
-        padding-top: 0;
+        width: 80%;
+        padding-top: 10%;
+        margin-right: 0;
 
     }
 

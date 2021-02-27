@@ -9,3 +9,4 @@ btn.addEventListener('click', function () {
         guarana.classList.remove("transforma");
     }, 700)
 });
+
