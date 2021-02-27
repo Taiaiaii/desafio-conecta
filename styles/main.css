@@ -1,3 +1,5 @@
+/* -------------------------primeira seção mobile-------------------------*/
+
 .produtos {
     margin-top: 10%;
     text-align: center;
@@ -133,6 +135,8 @@
 }
 
 @media screen and (min-width: 768px) {
+
+ /* -------------------------primeira seçao ipad -------------------------*/
     .produtos__titulo {
         width: 80%;
         margin: auto;
@@ -190,8 +194,8 @@
     }
     .depoimentos {
         top: 80px;
-        left: 5px;
-        width: 90%;
+        left: 1%;
+        width: 100%;
         margin: auto;
     }
 

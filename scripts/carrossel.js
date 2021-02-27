@@ -13,8 +13,15 @@ const depoimentos = [
     },
 
     {
-        texto: '"Excepturi et facilis, recusandae beatae laboriosam autem velit!"',
+        texto: '"Excepturi et facilis, recusandae beatae laboriosam velit!"',
         autor: "@cicrano"
+
+    },
+
+    {
+
+        texto: '"Necessitatibus ab possimus vel voluptate,  doloribus"',
+        autor: "@beltrano"
 
     },
 
@@ -24,6 +31,8 @@ const depoimentos = [
         autor: "@taiaiaii"
 
     },
+
+
 
 ];
 
@@ -52,4 +61,4 @@ function trocaDepoimento() {
     document.querySelector('.demonstrativo__bullets a[data-posicao="' + posicao + '"]').classList.add("active");
 }
 
-setInterval(trocaDepoimento, 3000);
+setInterval(trocaDepoimento, 2000);
