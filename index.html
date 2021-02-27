@@ -21,7 +21,7 @@
 <body>
     <header class="cabecalho">
         <div class="row cabecalho__topo">
-            <img class="cabecalho__logo" src="images/logo-cabecalho.svg" alt="logo conecta">
+            <img class="cabecalho__logo" src="images/logo.svg" alt="logo conecta">
             <ul class="cabecalho__redes-sociais">
                 <li><a href="#"><img src="images/fb-icon.svg" alt="icone do facebook"></a></li>
                 <li><a href="#"><img src="images/ig-icon.svg" alt="icone do instagram"></a></li>
@@ -117,34 +117,59 @@
             <div class="rodape__fale-conosco">
                 <h1>Fale Conosco.</h1>
                 <ul class="rodape__flex">
-                    <li ><a class="icones" href="#"><img class="icones-img" src="images/fb-icon.svg" alt="icone do facebook"></a></li>
-                    <li ><a class="icones" href="#"><img class="icones-img" src="images/ig-icon.svg" alt="icone do instagram"></a></li>
+                    <li><a class="icones" href="#"><img class="icones-img" src="images/fb-icon.svg"
+                                alt="icone do facebook"></a></li>
+                    <li><a class="icones" href="#"><img class="icones-img" src="images/ig-icon.svg"
+                                alt="icone do instagram"></a></li>
                     <li class="icones-separador">|</li>
                     <li class="icones-legenda">Redes Sociais</li>
                 </ul>
             </div>
-            <div class="rodape__formulario" >
+            <div class="rodape__formulario">
                 <form action="">
-                    <label for="nome">nome</label>
-                    <input class="rodape__formulario-input"id="nome" type="text" placeholder="nome">
-                    <label for="telefone">Telefone</label>
-                    <input class="rodape__formulario-input"id="telefone" type="text" placeholder="(21) 00000-00000">
-                    <label for="email">e-mail</label>
-                    <input class="rodape__formulario-input"id="email" type="text" placeholder="email@email.com.br">
-                    <label for="assunto">assunto</label>
-                    <select class="rodape__formulario-input" name="" id="assunto">
-                        <option value="">Selecione o Assunto</option>
-                        <option value="">Compra de Produtos</option>
-                        <option value="">Parcerias</option>
-                        <option value="">Dúvidas e Sugestões</option>
-                        <option value="">Outro</option>
-                    </select>
+                    <div class="rodape__formulario-bloco">
+                        <input autofocus class="rodape__formulario-input" id="nome" type="text"
+                            placeholder="EX: Taiane Taveira">
+                        <label for="nome">nome</label>
+                    </div>
+                    <div class="rodape__formulario-versao-web">
+                        <div class="rodape__formulario-bloco bloco-telefone">
+                            <input class="rodape__formulario-input" id="telefone" type="text"
+                                placeholder="(21) 00000-00000">
+                            <label for="telefone">Telefone</label>
+                        </div>
+                        <div class="rodape__formulario-bloco bloco-email">
+                            <input class="rodape__formulario-input" id="email" type="text"
+                                placeholder="email@email.com.br">
+                            <label for="email">e-mail</label>
+                        </div>
+                    </div>
+                    <div class="rodape__formulario-bloco">
+                        <select class="rodape__formulario-input" name="" id="assunto">
+                            <option value="">Selecione o Assunto</option>
+                            <option value="">Compra de Produtos</option>
+                            <option value="">Parcerias</option>
+                            <option value="">Dúvidas e Sugestões</option>
+                            <option value="">Outro</option>
+                        </select>
+                        <label for="assunto">assunto</label>
+                    </div>
+                    <div class="rodape__formulario-bloco">
+                        <textarea class="rodape__formulario-input" cols="30" rows="10" id="mensagem" type="text"
+                            placeholder="Escreva aqui sua mensagem"></textarea>
                         <label for="mensagem">mensagem</label>
-                        <textarea class="rodape__formulario-input"cols="30" rows="10" id="mensagem"type="text" placeholder="Escreva aqui sua mensagem">
-                        </textarea>
-                        </form>
-
-
+                    </div>
+                    <div class="rodape__botao-flex">
+                        <button>Aqui um CTA</button>
+                    </div>
+                </form>
+            </div>
+            <div class="rodape__informes">
+                <p class="rodape__direitos">Todos os direitos reservados © 2020 Conecta</p>
+                <ul class="rodape__lista-flex">
+                    <li class="rodape__proj">projetado por</li>
+                    <li><img class="rodape__logo" src="images/logo.svg" alt="logo conecta"></li>
+                </ul>
             </div>
         </footer>
     </main>
@@ -152,3 +177,4 @@
 </body>
 
 </html>
+

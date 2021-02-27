@@ -1,6 +1,7 @@
 .rodape {
     height: auto;
     background-image: url(../images/fundo-footer.png);
+    padding-bottom: 1%;
 }
 
 .rodape__fale-conosco {
@@ -52,18 +53,27 @@
 .rodape__formulario {
     font-family: 'Roboto Slab', serif;
     color: rgb(129, 127, 127);
-    font-size: 0.9em;
-    text-transform: uppercase;
     width: 90%;
     margin: auto;
     padding: 5%;
-    margin-top: 10%;
+
+
+}
+
+.rodape__formulario-bloco {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    text-transform: uppercase;
+}
+
+.rodape__formulario-bloco label {
+    font-size: 0.9em;
 }
 
 .rodape__formulario-input {
     display: block;
-    margin: 4% 0;
-    padding: 7px;
+    margin: 1% 0 4%;
+    padding: 15px;
     background-color: #1b1f1c;
     border: solid 0.5px #dad6d6;
     color: #dad6d6;
@@ -71,11 +81,11 @@
     border-left: none;
     font-size: 1.2em;
     width: 100%;
-
 }
 
 ::-webkit-input-placeholder {
     color: #dad6d6;
+
 }
 
 .rodape__formulario-input:focus {
@@ -87,9 +97,60 @@
     outline: none;
 }
 
+.rodape__formulario-input:focus~label {
+    color: #00ec5b
+}
 
+.rodape__botao-flex {
+    display: flex;
+    justify-content: center;
+    margin: 15% auto;
+}
 
+.rodape__botao-flex button {
+    background-color: #00EC5B;
+    border: none;
+    border-radius: 50px;
+    width: 60%;
+    padding: 15px;
+    font: inherit;
+}
 
+/* -------------------------fim do formulário -------------------------*/
+
+.rodape__informes {
+    margin: 10% auto;
+    width: 90%;
+    font-family: 'Roboto Slab', serif;
+}
+
+.rodape__direitos {
+    font-size: 0.85em;
+    line-height: 3em;
+    color: rgb(129, 127, 127);
+    margin-bottom: 5%;
+
+}
+
+.rodape__lista-flex {
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 85%;
+    margin-left: 15%;
+}
+
+.rodape__proj {
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.7em;
+    padding-top: 15px;
+}
+
+.rodape__logo {
+    width: 80%;
+}
 
 @media screen and (min-width: 768px) {
     .rodape__fale-conosco h1 {
@@ -120,24 +181,134 @@
     .icones-legenda {
         font-size: 1em;
         margin-top: 7px;
+    }
+
+    /* -------------------------formulário ipad -------------------------*/
+
+    .rodape__botao-flex {
+        margin: 2% auto;
+    }
+
+    .rodape__botao-flex button {
+        border-radius: 50px;
+        width: 100%;
+        padding: 30px;
+    }
+
+    /* -------------------------fim do formulário ipad -------------------------*/
+    .rodape__informes {
+        margin: 5% auto;
+        width: 100%;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .rodape__direitos {
+        text-align: center;
+        font-size: 0.9em;
+        margin-bottom: 0;
 
     }
 
+    .rodape__lista-flex {
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 85%;
+        margin-left: 10%;
+    }
+
+
+    .rodape__proj {
+        font-size: 0.7em;
+        padding-top: 15px;
+    }
+
+    .rodape__logo {
+        width: 80%;
+    }
 
 }
 
 @media screen and (min-width: 1024px) {
 
     .rodape {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: baseline
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 90% 10%;
+        padding-bottom: 5%;
+
+
     }
 
     .rodape__fale-conosco {
-        width: 180%;
-        padding: 10%;
-        padding-top: 20%;
+        width: 100%;
+        padding-top: 30%;
+    }
+
+    .rodape__fale-conosco h1 {
+        font-size: 3.5em;
+        margin-left: 3%;
+        width: 100%;
+
+    }
+
+    /* -------------------------formulário web -------------------------*/
+    .rodape__formulario {
+        width: 100%;
+        padding-top: 0;
+
+    }
+
+    .rodape__informes {
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2%;
+    }
+
+    .rodape__formulario-versao-web {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    .bloco-telefone {
+        width: 49%;
+    }
+
+    .bloco-email {
+        width: 49%;
+    }
+
+    .rodape__botao-flex {
+        justify-content: flex-end;
+        margin: 2% auto;
+    }
+
+    .rodape__botao-flex button {
+        width: 35%;
+        padding: 25px;
+    }
+
+    /* -------------------------fim do formulário web-------------------------*/
+    .rodape__direitos {
+        width: 80%;
+        font-size: 1em;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .rodape__proj {
+        font-size: 0.9em;
+        padding-top: 15px;
+    }
+
+    .rodape__lista-flex {
+        width: 40%;
+        padding-top: 10px;
     }
 
 }
