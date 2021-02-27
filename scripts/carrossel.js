@@ -7,7 +7,7 @@ const depoimentos = [
     },
 
     {
-        texto: '"Dolor sit amet consectetur adipisicing elit. Nostrum quis et a quidem!!"',
+        texto: '"Dolor sit amet consectetur adipisicing elit!!"',
         autor: "@fulano"
 
     },
