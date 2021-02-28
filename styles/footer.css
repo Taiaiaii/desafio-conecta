@@ -51,13 +51,15 @@
 
 /* -------------------------formulário -------------------------*/
 
-.rodape__formulario {
+.rodape__formulario{
     font-family: 'Roboto Slab', serif;
     color: rgb(129, 127, 127);
     width: 90%;
     margin: auto;
     padding: 5%;
 }
+
+
 
 .rodape__formulario-bloco {
     display: flex;
@@ -82,8 +84,13 @@
     width: 100%;
 }
 
+.seletor {
+    color: rgb(129, 127, 127);
+}
+
 ::-webkit-input-placeholder {
-    color: #dad6d6;
+    opacity: 0.9;
+    
 
 }
 
@@ -114,6 +121,33 @@
     padding: 15px;
     font: inherit;
     font-size: 0.8em;
+}
+
+.msg-campo-obrigatorio {
+    font-family: 'Roboto Slab', serif;
+    color: #ec6a00;
+    font-size: 1em;
+    line-height: 1.3em;
+    border-bottom: solid 0.5px #dad6d6;
+    padding: 5px;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+.msg-sucesso {
+    font-family: 'Roboto Slab', serif;
+    color: #00ec5b;
+    font-size: 1.2em;
+    border: solid 0.5px #dad6d6;
+    padding: 5px;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+.destacar-campo {
+    border: solid 1px #ec6a00;
+    background-color: rgb(129, 127, 127);
+
 }
 
 /* -------------------------fim do formulário -------------------------*/

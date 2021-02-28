@@ -61,7 +61,6 @@
                 </div>
             </div>
         </section>
-
         <section class="demonstrativos">
             <div class="demonstrativos-grid">
                 <figure class="grid-item-1">
@@ -96,7 +95,6 @@
             </div>
         </section>
         <section class="experimentar">
-
             <div class="experimentar__linha1-coluna1">
                 <img class="experimentar__img-difusa" src="images/section3-esquerda-acima.png"
                     alt="lata pequena e difusa">
@@ -113,9 +111,7 @@
             <div class="experimentar__linha12coluna3">
                 <img class="experimentar__img-grande" class="" src="images/section3-direita.png" alt="lata grande">
             </div>
-
         </section>
-
         <footer class="rodape">
             <div class="rodape__fale-conosco">
                 <h1>Fale Conosco.</h1>
@@ -131,7 +127,7 @@
             <div class="rodape__formulario">
                 <form action="">
                     <div class="rodape__formulario-bloco">
-                        <input class="rodape__formulario-input" id="nome" type="text" placeholder="EX: Taiane Taveira">
+                        <input class=" obrigatorio rodape__formulario-input" id="nome" type="text" data-mensagem="Por favor, preencha o nome!"placeholder="EX: Taiane Taveira">
                         <label for="nome">nome</label>
                     </div>
                     <div class="rodape__formulario-versao-web">
@@ -141,24 +137,27 @@
                             <label for="telefone">Telefone</label>
                         </div>
                         <div class="rodape__formulario-bloco bloco-email">
-                            <input class="rodape__formulario-input" id="email" type="text"
-                                placeholder="email@email.com.br">
+                            <input class=" obrigatorio rodape__formulario-input" id="email" type="text"
+                                data-mensagem="Por favor, preencha o e-mail"placeholder="email@email.com.br">
                             <label for="email">e-mail</label>
                         </div>
                     </div>
                     <div class="rodape__formulario-bloco">
-                        <select class="rodape__formulario-input" name="" id="assunto">
-                            <option value="">Selecione o Assunto</option>
-                            <option value="">Compra de Produtos</option>
-                            <option value="">Parcerias</option>
-                            <option value="">Dúvidas e Sugestões</option>
-                            <option value="">Outro</option>
+                        <select class="obrigatorio rodape__formulario-input" name="" id="assunto"  data-mensagem="Por
+                            favor, selecione um assunto!">
+                            <option class="seletor" value="">Selecione Um Assunto</option>
+                            <option value="1">Compra de Produtos</option>
+                            <option value="2">Parcerias</option>
+                            <option value="3">Dúvidas e Sugestões</option>
+                            <option value="4">Outro</option>
                         </select>
                         <label for="assunto">assunto</label>
                     </div>
                     <div class="rodape__formulario-bloco">
-                        <textarea class="rodape__formulario-input" cols="30" rows="10" id="mensagem" type="text"
-                            placeholder="Escreva aqui sua mensagem"></textarea>
+                        <textarea placeholder="Escreva aqui sua mensagem" class="obrigatorio rodape__formulario-input"
+                            cols="30" rows="10" id="mensagem"
+                            type="text"
+                            data-mensagem="Por favor, preencha a mensagem"></textarea>
                         <label for="mensagem">mensagem</label>
                     </div>
                     <div class="rodape__botao-flex">
