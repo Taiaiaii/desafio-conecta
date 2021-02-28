@@ -1,8 +1,9 @@
 const depoimentos = [
 
+
     {
         texto: '"Laborum aliquid , veritatis soluta possimus esse?"',
-        autor: "@zédascouves"
+        autor: "@taiaiai"
 
     },
 
@@ -25,19 +26,14 @@ const depoimentos = [
 
     },
 
-    {
 
-        texto: '"Lorem ipsum dolor sit amet, elit. Optio, incidunt facilis!"',
-        autor: "@taiaiaii"
-
-    },
 
 
 
 ];
 
 let limite = depoimentos.length - 1;
-let posicao = limite;
+let posicao = -1;
 
 function proximoItem() {
     if (posicao < limite) {
@@ -49,16 +45,27 @@ function proximoItem() {
     return posicao;
 }
 
-function trocaDepoimento() {
+function trocaItem() {
+    let item = depoimentos[proximoItem()];
+    ativaItem(item, posicao)
+}
+trocaItem()
+function ativaItem(item, posicao) {
+    document.querySelector(".depoimento-texto").textContent = item.texto;
+    document.querySelector(".depoimento-autor").textContent = item.autor;
 
-    let depoimento = depoimentos[proximoItem()];
-
-
-    document.querySelector(".depoimento-texto").textContent = depoimento.texto;
-    document.querySelector(".depoimento-autor").textContent = depoimento.autor;
 
     document.querySelector(".active").classList.remove("active");
-    document.querySelector('.demonstrativo__bullets a[data-posicao="' + posicao + '"]').classList.add("active");
+    document.querySelector(`.demonstrativo__bullets span[data-posicao="${posicao}"]`).classList.add("active");
 }
 
-setInterval(trocaDepoimento, 2000);
+setInterval(trocaItem, 5000);
+
+document.querySelector('.demonstrativo__bullets').addEventListener('click', function(event){
+    
+    var atual = event.target.dataset.posicao
+    
+    ativaItem(depoimentos[atual], atual)
+    posicao = atual
+    
+})
