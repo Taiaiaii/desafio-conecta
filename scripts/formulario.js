@@ -1,3 +1,14 @@
+const seletor = document.querySelector('#assunto')
+seletor.addEventListener('change', () => {
+    if (!seletor.value) {
+        seletor.classList.add('seletor')
+    } else {
+        seletor.classList.remove('seletor');
+    }
+})
+var event = new Event('change');
+seletor.dispatchEvent(event);
+
 const form = document.querySelector('form');
 const divMsg = document.createElement('div');
 divMsg.classList.add('msg-sucesso');
@@ -24,6 +35,9 @@ form.addEventListener('submit', (event) => {
         divMsg.textContent = "Agradecemos sua mensagem!!";
         divMsg.classList.replace('msg-campo-obrigatorio', 'msg-sucesso')
         form.reset();
+        var e = new Event('change');
+        seletor.dispatchEvent(e);
+        
     }
 
     form.insertAdjacentElement('beforebegin', divMsg);
@@ -44,15 +58,4 @@ form.addEventListener('submit', (event) => {
 
 });
 
-const seletor = document.querySelector('#assunto')
-
-seletor.addEventListener('change', ()=>{
-    if (!seletor.value) {
-        seletor.classList.add('seletor')
-    }else {
-        seletor.classList.remove('seletor');
-    }
-})
-var event = new Event('change');
-seletor.dispatchEvent(event);
  
