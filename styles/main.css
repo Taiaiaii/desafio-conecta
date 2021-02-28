@@ -113,14 +113,14 @@
 }
 
 .depoimento-autor {
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 
 .demonstrativo__bullets span {
     text-decoration: none;
     color: rgb(129, 127, 127);
     padding: 1%;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1.5;
     opacity: 0.6;
 }
@@ -279,11 +279,11 @@
     }
 
     .depoimento-texto {
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     .depoimento-autor {
-        margin-bottom: 20%;
+        margin-bottom: 5%;
     }
 
     /* -------------------------terceira seção tablet -------------------------*/

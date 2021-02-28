@@ -59,7 +59,7 @@ function ativaItem(item, posicao) {
     document.querySelector(`.demonstrativo__bullets span[data-posicao="${posicao}"]`).classList.add("active");
 }
 
-setInterval(trocaItem, 5000);
+setInterval(trocaItem, 3000);
 
 document.querySelector('.demonstrativo__bullets').addEventListener('click', function(event){
     
