@@ -2,7 +2,7 @@ const depoimentos = [
 
 
     {
-        texto: '"Laborum aliquid , veritatis soluta possimus esse?"',
+        texto: '"Laborum aliquid, veritatis soluta possimus esse?"',
         autor: "@taiaiai"
 
     },
@@ -14,14 +14,14 @@ const depoimentos = [
     },
 
     {
-        texto: '"Excepturi et facilis, recusandae beatae laboriosam velit!"',
+        texto: '"Excepturi et facilis, recusandae laboriosam velit!"',
         autor: "@cicrano"
 
     },
 
     {
 
-        texto: '"Necessitatibus ab possimus vel voluptate,  doloribus"',
+        texto: '"Necessitatibus ab possimus vel voluptate, doloribus"',
         autor: "@beltrano"
 
     },

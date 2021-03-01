@@ -1,13 +1,14 @@
 const produtos = document.querySelectorAll('.produtos__item');
-const divConteudo = document.createElement('div')
-divConteudo.classList.add('ver-mais')
+
 
 for (let item of produtos) {
+
+    const divConteudo = document.createElement('div')
+    divConteudo.classList.add('ver-mais')
 
     item.addEventListener('click', function (event) {
 
         if (event.target.classList.contains('botao-produto')) {
-            console.log('clicado')
 
             if (item.classList.contains('produto-clicado')) {
                 item.classList.remove('produto-clicado');
@@ -17,9 +18,6 @@ for (let item of produtos) {
             } else {
                 item.classList.add('produto-clicado');
                 event.target.textContent = 'Voltar'
-
-
-
                 divConteudo.innerHTML = `    
     <h1>Sobre</h1>
     <p>Lorem ipsum,possimus dicta.Velit ducimus saepe earum expedita veritatis, quidem animi optio. Suscipit, omnis.</p>
@@ -29,9 +27,7 @@ for (let item of produtos) {
     </ul>`
                 // debugger;
                 item.appendChild(divConteudo)
-                
             }
-
         }
 
 

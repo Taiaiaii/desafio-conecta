@@ -378,6 +378,11 @@
     .rodape__lista-flex {
         width: 23%;
     }
+
+     .rodape__icones {
+        margin-left: 29%;
+
+     }
 }
 
 @media screen and (min-width: 2560px) {
@@ -403,5 +408,10 @@
         margin-left: 12%;
 
     }
+
+     .rodape__icones {
+         margin-left: 35%;
+         width: 100%;
+     }
 
 }

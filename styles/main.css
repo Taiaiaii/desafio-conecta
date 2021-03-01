@@ -73,13 +73,12 @@
     bottom: -25px;
 }
 
-/* -----CTA------- */
+/* -----CTA produtos------- */
 
 .produto-clicado {
 
         width: 100%;
         margin: auto;
-        box-shadow: 10px 10px 20px 20px #1d1c1c; border-radius: 20px;
         margin-bottom: 20%;   
         border:solid 0.5px#00EC5B;
 }
@@ -190,7 +189,7 @@
     top: 80px;
     left: 30px;
     width: 100%;
-    opacity: 0.8;
+    
 }
 
 /* -------------------------terceira seção mobile -------------------------*/
@@ -530,9 +529,8 @@
 @media screen and (min-width: 1440px) {
     .produtos button {
         width: 60%;
-        padding: 22px;
-
-
+        padding: 12px;
+        left: 21%;
     }
 
     /* -------------------------segunda seção web telas maiores -------------------------*/
@@ -556,7 +554,7 @@
 
     /* -------------------------terceira seção web telas maiores-------------------------*/
     .experimentar {
-        height: 36vh;
+        height: 31vh;
     }
 
     .experimentar__img-difusa {
