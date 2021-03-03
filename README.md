@@ -3,7 +3,7 @@ Criação de landing page ficticia, representada através da ferramenta de layou
 
 ## Deploy
 Site foi deployado no github pages, para facilitar a visualização.
-([Link](https://github.com/Taiaiaii/desafio-conecta)) 
+([Link](https://taiaiaii.github.io/desafio-conecta/)) 
 
 
 ## Como Rodar
